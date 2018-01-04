@@ -10,3 +10,17 @@
     font-size: $base + px;
     font-size: ($base/10) + rem;
 }
+
+
+$size-max: 940px;
+$color-base: #81d8d0;
+$color-txt: #fff;
+$sp: 768px;
+$pc: 960px;
+$lh-title: 1.1;
+$lh-txt: 1.5;
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
+$font-jp: "Sawarabi Gothic","メイリオ","Meiryo",
+"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",verdana,
+Sans-Serif;
+$font-en: "Carrois Gothic",sans-serif;

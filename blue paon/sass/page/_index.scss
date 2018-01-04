@@ -1,0 +1,34 @@
+.mv{
+    width: 100%;
+    height: 130px;
+    background: url(../img/mv_slide1_pc.png) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.about{
+    width: 100%;
+    height: 336px;
+    background: url(../img/about_bg.png) no-repeat center center;
+    background-size: cover;
+    font-family: $font-jp;
+    color: $color-txt;
+    text-align: center;
+}
+
+.about-txt{
+    display: inline-block;
+    @include rem(18)
+    line-height: $lh-txt;
+    
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+

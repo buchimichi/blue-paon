@@ -1,0 +1,28 @@
+.header-nav {
+    width: 100%;
+    &-list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item {
+        list-style-type: none;
+        flex: 0 0 50%;
+    }
+    &-link {
+        display: block;
+        @include rem(24);
+        padding: 10px 0;
+        line-height: 30px;
+        text-decoration: none;
+        color: $color-txt;
+        text-align: center;
+        &:hover{
+            background-color:rgba(255,255,255,.5);
+            border-radius: 20px;
+        }
+    }
+}

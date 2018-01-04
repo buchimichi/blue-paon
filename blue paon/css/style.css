@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic");
 /*リセットcss*/
 /*
 html5doctor.com Reset Stylesheet
@@ -100,3 +101,79 @@ img {
 *, *::before, ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.header {
+  width: 100%;
+  height: 305px;
+  background-color: #81d8d0; }
+  .header-logo {
+    height: 130px;
+    background: url(../img/header_logo.png) no-repeat center center; }
+
+.main {
+  padding: 40px 0; }
+
+.header-nav {
+  width: 100%; }
+  .header-nav-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .header-nav-item {
+    list-style-type: none;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; }
+  .header-nav-link {
+    display: block;
+    font-size: 24px;
+    font-size: 2.4rem;
+    padding: 10px 0;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center; }
+    .header-nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 20px; }
+
+.inner {
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative; }
+
+.about-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0 24px 0; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.about {
+  width: 100%;
+  height: 336px;
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #fff;
+  text-align: center; }
+
+.about-txt {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left; }
