@@ -1,6 +1,7 @@
-.about-title{
+.top-title{
     @include rem(24);
     color: $color-txt;
     text-align: center;
+    font-family: $font-jp;
     padding: 16px 0 24px 0;
 }

@@ -148,11 +148,40 @@ img {
   margin: 0 auto;
   position: relative; }
 
-.about-title {
+.top-maincontent {
+  max-width: 100%;
+  height: 336px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 32px; }
+
+.top-btn-all {
+  font-size: 24px;
+  font-size: 2.4rem;
+  display: inline-block;
+  padding: 12px 55px;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(129, 216, 208, 0.5);
+  border-radius: 10px;
+  white-space: nowrap; }
+
+.top-aboutbtn {
+  margin-top: 10px; }
+
+.top-cafebtn {
+  margin-top: 30px; }
+
+.top-dolcebtn {
+  margin-top: 40px; }
+
+.top-title {
   font-size: 24px;
   font-size: 2.4rem;
   color: #fff;
   text-align: center;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
   padding: 16px 0 24px 0; }
 
 .mv {
@@ -162,18 +191,21 @@ img {
   background-size: cover;
   margin-bottom: 40px; }
 
-.about {
-  width: 100%;
-  height: 336px;
+.top-about {
   background: url(../img/about_bg.png) no-repeat center center;
-  background-size: cover;
-  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
-  color: #fff;
-  text-align: center; }
+  background-size: cover; }
 
-.about-txt {
+.top-txt {
   display: inline-block;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: left; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }

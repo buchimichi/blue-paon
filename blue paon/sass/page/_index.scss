@@ -6,22 +6,26 @@
     margin-bottom: 40px;
 }
 
-.about{
-    width: 100%;
-    height: 336px;
+.top-about{
     background: url(../img/about_bg.png) no-repeat center center;
     background-size: cover;
-    font-family: $font-jp;
-    color: $color-txt;
-    text-align: center;
 }
 
-.about-txt{
+.top-txt{
     display: inline-block;
     @include rem(18)
     line-height: $lh-txt;
-    
     text-align: left;
+}
+
+.top-cafe{
+    background: url(../../img/cafe_bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.top-dolce{
+    background: url(../../img/dolce_bg.png) no-repeat center center;
+    background-size: cover;
 }
 
 
