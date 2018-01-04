@@ -1,0 +1,2 @@
+[2018-01-04 11:13:19] layer "         DINNER MENU     （17:00～19:00L.O）  本日の前菜3種盛り合わせ  600円 本": Expected end of input but "\uFF09" found.
+[2018-01-04 11:13:19] layer "    DINNER MENU（17:00～19:00L.O）  本日の前菜3種盛り合わせ          600円 本日の": Expected end of input but "\uFF09" found.
