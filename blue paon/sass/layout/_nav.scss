@@ -26,3 +26,19 @@
         }
     }
 }
+
+@media screen and(min-width:$pc){
+    .header-nav {
+        width: 15%;
+        padding-top: 40px;
+        float: right;
+    &-list {
+        flex-wrap: nowrap;
+    }
+    &-item {
+        list-style-type: none;
+        margin-right: 24px;
+    }
+}
+
+}

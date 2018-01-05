@@ -104,14 +104,74 @@ img {
 
 .header {
   width: 100%;
-  height: 305px;
   background-color: #81d8d0; }
-  .header-logo {
-    height: 130px;
-    background: url(../img/header_logo.png) no-repeat center center; }
+
+@media screen and (min-width: 768px) {
+  .header {
+    overflow: hidden; } }
 
 .main {
   padding: 40px 0; }
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #81d8d0; }
+
+.dolce-logo {
+  display: block;
+  background: url(../../img/dolce_logo.png) no-repeat center center;
+  height: 48px;
+  margin: 48px 0; }
+  .dolce-logo:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px; }
+
+.sns {
+  display: inline-block;
+  height: 65px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 24px; }
+
+.facebook {
+  margin-right: 40px; }
+  .facebook:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px; }
+
+.insta:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px; }
+
+.copy {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 960px) {
+  .dolce-logo {
+    width: 260px;
+    height: 48px;
+    margin-right: 140px;
+    position: relative;
+    right: 40px; }
+  .sns {
+    padding-top: 40px;
+    height: 100px; }
+  .copy {
+    font-size: 24px;
+    font-size: 2.4rem; } }
 
 .header-nav {
   width: 100%; }
@@ -143,6 +203,18 @@ img {
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 20px; }
 
+@media screen and (min-width: 960px) {
+  .header-nav {
+    width: 15%;
+    padding-top: 40px;
+    float: right; }
+    .header-nav-list {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+    .header-nav-item {
+      list-style-type: none;
+      margin-right: 24px; } }
+
 .inner {
   max-width: 940px;
   margin: 0 auto;
@@ -150,11 +222,37 @@ img {
 
 .top-maincontent {
   max-width: 100%;
-  height: 336px;
+  height: 100%;
   font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
   color: #fff;
   text-align: center;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  padding-bottom: 24px; }
+
+@media screen and (min-width: 960px) {
+  .header-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .top-maincontent {
+    height: 336px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .top-footercontent {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex; } }
 
 .top-btn-all {
   font-size: 24px;
@@ -166,15 +264,32 @@ img {
   background: rgba(129, 216, 208, 0.5);
   border-radius: 10px;
   white-space: nowrap; }
+  .top-btn-all:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
 
-.top-aboutbtn {
-  margin-top: 10px; }
+.top-aboutbtn, .top-cafebtn, .top-dolcebtn {
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px; }
 
-.top-cafebtn {
-  margin-top: 30px; }
+@media screen and (min-width: 768px) {
+  .top-aboutbtn, .top-cafebtn, .top-dolcebtn {
+    position: relative;
+    top: 24px; } }
 
-.top-dolcebtn {
-  margin-top: 40px; }
+@media screen and (min-width: 960px) {
+  .top-aboutbtn {
+    position: relative;
+    top: 100px;
+    left: 280px; }
+  .top-cafebtn {
+    position: relative;
+    top: 200px;
+    left: 230px; }
+  .top-dolcebtn {
+    position: relative;
+    top: 200px;
+    left: 220px; } }
 
 .top-title {
   font-size: 24px;
@@ -184,6 +299,52 @@ img {
   font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
   padding: 16px 0 24px 0; }
 
+.top-biukuptitle {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0 24px 0;
+  margin-bottom: 40px; }
+
+.top-accesstitle {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #000;
+  text-align: center;
+  padding: 16px 0 24px 0;
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 960px) {
+  .top-title {
+    font-size: 30px;
+    font-size: 3rem;
+    padding-top: 80px;
+    float: left; }
+  .top-biukuptitle {
+    font-size: 30px;
+    font-size: 3rem;
+    margin-top: 40px; } }
+
+.page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  width: 45px;
+  height: 45px; }
+
+@media screen and (min-width: 960px) {
+  .page-top {
+    position: fixed;
+    right: 48px;
+    bottom: 45px;
+    width: 115px;
+    height: 112px; } }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
 .mv {
   width: 100%;
   height: 130px;
@@ -191,16 +352,18 @@ img {
   background-size: cover;
   margin-bottom: 40px; }
 
-.top-about {
-  background: url(../img/about_bg.png) no-repeat center center;
-  background-size: cover; }
-
 .top-txt {
+  width: 90%;
   display: inline-block;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
-  text-align: left; }
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
 
 .top-cafe {
   background: url(../../img/cafe_bg.png) no-repeat center center;
@@ -209,3 +372,97 @@ img {
 .top-dolce {
   background: url(../../img/dolce_bg.png) no-repeat center center;
   background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
