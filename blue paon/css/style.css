@@ -229,6 +229,15 @@ img {
   margin-bottom: 32px;
   padding-bottom: 24px; }
 
+.about-maincontent {
+  max-width: 100%;
+  height: 100%;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 32px;
+  padding-bottom: 24px; }
+
 @media screen and (min-width: 960px) {
   .header-content {
     display: -webkit-flex;
@@ -252,7 +261,15 @@ img {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
-    display: -o-flex; } }
+    display: -o-flex; }
+  .about-maincontent {
+    overflow: hidden; }
+  .kikusui-content {
+    height: 330px;
+    margin-bottom: 80px; }
+  .maruyama-content {
+    height: 330px;
+    margin-bottom: 80px; } }
 
 .top-btn-all {
   font-size: 24px;
@@ -299,7 +316,7 @@ img {
   font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
   padding: 16px 0 24px 0; }
 
-.top-biukuptitle {
+.top-bickuptitle {
   font-size: 24px;
   font-size: 2.4rem;
   color: #fff;
@@ -315,16 +332,43 @@ img {
   padding: 16px 0 24px 0;
   margin-bottom: 40px; }
 
+.about-shoptitle {
+  font-size: 30px;
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  padding: 0 0 24px 0;
+  margin-bottom: 40px; }
+
+.kikusui-title {
+  width: 88%;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #000;
+  text-align: center;
+  padding: 16px 7px 24px 45px;
+  margin-bottom: 40px; }
+
 @media screen and (min-width: 960px) {
   .top-title {
     font-size: 30px;
     font-size: 3rem;
     padding-top: 80px;
     float: left; }
-  .top-biukuptitle {
+  .top-bickuptitle {
     font-size: 30px;
     font-size: 3rem;
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .kikusui-title {
+    width: 40%;
+    height: 30px;
+    font-size: 24px;
+    font-size: 2.4rem;
+    color: #000;
+    float: left;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 40px; } }
 
 .page-top {
   position: fixed;
@@ -340,6 +384,863 @@ img {
     bottom: 45px;
     width: 115px;
     height: 112px; } }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.top-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
+
+.about-mv {
+  width: 100%;
+  height: 130px;
+  background: url(../../img/about-mvbg.png) no-repeat 30% center;
+  background-size: cover;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px; }
+
+.about-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 6px;
+  color: #000;
+  margin-bottom: 40px; }
+
+.kikusui-img {
+  width: 80%;
+  height: 200px;
+  background: url(../../img/kikusui.png) no-repeat center center;
+  margin: 0 auto; }
+
+.kikusui-maintxt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 6px;
+  color: #000;
+  margin-bottom: 40px; }
+
+.kikusui-map {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 80px; }
+
+.maruyama-img {
+  width: 80%;
+  height: 200px;
+  background: url(../../img/maruyama.png) no-repeat center center;
+  margin: 0 auto; }
+
+@media screen and (min-width: 960px) {
+  .about-mv {
+    height: 260px;
+    background-position: center 20%;
+    padding-top: 120px; }
+  .about-txt {
+    width: 100%; }
+  .kikusui-img {
+    float: right;
+    width: 420px;
+    height: 320px; }
+  .kikusui-maintxt {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 0; }
+  .kikusui-map {
+    width: 100%;
+    height: 252px;
+    background-position: center center;
+    background-size: cover; }
+  .maruyama-img {
+    float: right;
+    width: 420px;
+    height: 320px; } }
+
+.cafe-mv {
+  width: 100%;
+  height: 130px;
+  background: url(../../img/top_cafe_pc.png) no-repeat 30% center;
+  background-size: cover;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px; }
+
+.about-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 6px;
+  color: #000;
+  margin-bottom: 40px; }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.top-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.top-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.top-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.top-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
+
+.logo {
+  height: 130px;
+  background: url(../img/header_logo.png) no-repeat center center; }
+
+.mv {
+  width: 100%;
+  height: 130px;
+  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px; }
+
+.top-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 7px; }
+
+.top-about {
+  background: url(../img/about_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-cafe {
+  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.top-dolce {
+  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.bickup {
+  width: 100%;
+  background: url(../../img/bickup_bg2.png) no-repeat center center;
+  background-size: cover; }
+  .bickup-list {
+    margin-bottom: 24px; }
+  .bickup-item {
+    list-style-type: none;
+    width: 55%;
+    height: 260px;
+    margin: 0 auto; }
+  .bickup-link {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 36px; }
+    .bickup-link:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; }
+  .bickup-img {
+    margin-bottom: 24px; }
+
+.top-accessmap {
+  display: block;
+  height: 110px;
+  background: url(../../img/access_bg.png) no-repeat center center;
+  background-size: cover;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none; }
+
+.top-accesstxt {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center; }
+  .top-accesstxt:hover {
+    background-color: rgba(50, 50, 50, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-cafe {
+    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background-size: cover; }
+  .top-dolce {
+    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background-size: cover; } }
+
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 145px;
+    padding-top: 10px;
+    margin-right: 230px; }
+  .mv {
+    height: 400px; }
+  .top-txt {
+    width: 60%;
+    float: right;
+    padding-top: 80px; }
+  .bickup {
+    height: 100%; }
+    .bickup-list {
+      margin-bottom: 24px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .bickup-item {
+      width: 100%;
+      margin-right: 24px;
+      margin-bottom: 40px; }
+    .bickup-link {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .bickup-img {
+      margin-bottom: 24px; }
+  .top-accessmap {
+    height: 317px; }
+  .top-accesstxt {
+    padding-top: 150px;
+    padding-bottom: 140px; }
+    .top-accesstxt:hover {
+      background-color: rgba(50, 50, 50, 0.5); } }
 
 .logo {
   height: 130px;

@@ -14,6 +14,17 @@
     padding-bottom: 24px
 }
 
+.about-maincontent{
+    max-width: 100%;
+    height: 100%;
+    font-family: $font-jp;
+    color: $color-txt;
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px
+}
+
+
 @media screen and(min-width:$pc){
     .header-content{
         display: -webkit-flex;
@@ -41,5 +52,16 @@
 //        display: flex;
         
 }
-    
+    .about-maincontent{
+        overflow: hidden;
+        
+}
+    .kikusui-content{
+        height: 330px;
+        margin-bottom: 80px;
+}
+    .maruyama-content{
+        height: 330px;
+       margin-bottom: 80px;
+}
 }
