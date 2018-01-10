@@ -67,5 +67,7 @@
 .copy{
     @include rem(24);
 }
-
+    .cafe-footer{
+        clear: both;
+    }
 }
