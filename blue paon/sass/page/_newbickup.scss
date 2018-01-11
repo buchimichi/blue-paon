@@ -1,157 +1,171 @@
-.logo{
-        height: 130px;
-        background: url(../img/header_logo.png) no-repeat center center;
-    }
-
-.mv {
+.newbickup-mv{
     width: 100%;
     height: 130px;
-    background: url(../img/mv_slide1_pc.png) no-repeat center center;
+    background: url(../img/newbickup_bg.png) no-repeat 30% center;
     background-size: cover;
+    margin-bottom: 40px;
+    @include rem(24);
+    color: $color-txt;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.younasi_holl-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/younasi_holl.png) no-repeat center center;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.top-txt {
+.younasi_stick-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/younasi_stick.png) no-repeat center center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.gorgon-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/gorgon.png) no-repeat center center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.banana-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/banana.png) no-repeat center center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.purin-txt {
     width: 90%;
     display: inline-block;
-    @include rem(18) 
+    @include rem(18);
     line-height: $lh-txt;
-    text-align: left;
-    padding: 0 7px;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 40px;
 }
 
-.top-about {
-    background: url(../img/about_bg.png) no-repeat center center;
-    background-size: cover;
+.cake-maintxt {
+    margin-bottom: 60px;
 }
 
-.top-cafe {
-    background: url(../../img/cafe_bg.png) no-repeat center center;
-    background-size: cover;
+.tizecake-txt {
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 60px;
 }
 
-.top-dolce {
-    background: url(../../img/dolce_bg.png) no-repeat center center;
-    background-size: cover;
+.gatosifon-txt {
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 60px;
+}
+.purin-yen {
+    width: 90%;
+    text-align: right;
 }
 
-.bickup {
-    width: 100%;
-    background: url(../../img/bickup_bg2.png) no-repeat center center;
-    background-size: cover;
-    &-list {
-        margin-bottom: 24px;
+.cake-yen {
+    margin-bottom: 45px;
+}
+
+.gatosifon-yen{
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    width: 90%;
+    text-align: right;
+    margin-bottom: 45px;
+}
+@media screen and(min-width:$pc) {
+    .newbickup-mv {
+        height: 400px;
+        padding-top: 100px;
     }
-    &-item {
-        list-style-type: none;
-        width: 55%;
-        height: 260px;
-        margin: 0 auto;
-    }
-    &-link {
-        display: inline-block;
-        @include rem(18);
-        padding: 10px 0;
-        line-height: $lh-txt;
-        text-decoration: none;
-        color: $color-txt;
-        text-align: center;
-        margin-bottom: 36px;
-        &:hover{
-            background-color:rgba(255,255,255,.5);
-            border-radius: 10px;
-        }
-    }
-    &-img {
-        margin-bottom: 24px;
-    }
-    
-}
-
-.top-accessmap{
-    display: block;
-    height: 110px;
-    background: url(../../img/access_bg.png) no-repeat center center;
-    background-size: cover;
-    @include rem(24);
-    color:$color-txt;
-    text-decoration: none;
-}
-
-.top-accesstxt{
-    padding-top: 45px;
-    padding-bottom: 40px;
-    text-align: center;
-    &:hover{
-            background-color:rgba(50,50,50,.5);
-        }
-}
-//--------------------768px以上-----------------------------
-@media screen and(min-width:$sp){
-    .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
-    background-size: cover;
-}
-
-.top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover;
-}
-
-.top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover;
-}
-}
-//------------------------960px以上-------------------------
-@media screen and (min-width:$pc){
-    .logo{
-        width: 145px;
-        padding-top: 10px;
-        margin-right: 230px;
-    }
-    .mv {
-    height: 400px;
-}
-    .top-txt {
-        width: 60%;
-        float: right;
-        padding-top: 80px;
-}
-
-.bickup {
-   height: 100%;
-    &-list {
-        margin-bottom: 24px;
-        display: -webkit-flex;
+    .cake-menuarea{
+        width: 100%;
+        ul{
+            display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
-        display: flex; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+            
+        li{ 
+            list-style-type: none;
+            flex: 0 0 40%;
+        }
+        }
     }
-    &-item {
-        width: 100%;
-        margin-right: 24px;
+    .younasi_holl-img,
+    .younasi_stick-img,
+    .gorgon-img,
+    .banana-img{
+        width: 380px;
+        height: 300px;
         margin-bottom: 40px;
     }
-    &-link {
-        @include rem(24);
+    .purin-txt {
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 0;
+        margin-bottom: 40px;
     }
-    &-img {
-        margin-bottom: 24px;
+    .cake-maintxt {  
+    margin-bottom: 60px;
+}
+    .lanch-maintxt{
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 60px;
+}
+    .newbickup-txt{
+       width: 98%;
     }
+    .tizecake-txt {
+    width: 73%;
+        margin-left: 150px;
 }
-    .top-accessmap{
-    height: 317px;
+    .gatosifon-txt {
+    width: 100%;
+    padding: 0 10px;
 }
-    .top-accesstxt{
-    padding-top: 150px;
-        padding-bottom: 140px;
-        &:hover{
-            background-color:rgba(50,50,50,.5);
-        }
+    .purin-yen {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 80px;
+    }
+    .gatosifon-yen{
+   
+    width: 100%;
+   
 }
 }
-
-
-

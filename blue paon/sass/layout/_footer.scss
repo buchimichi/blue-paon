@@ -6,7 +6,7 @@
 
 .dolce-logo{
     display: block;
-    background: url(../../img/dolce_logo.png) no-repeat center center;
+    background: url(../img/dolce_logo.png) no-repeat center center;
     height: 48px;
     margin: 48px 0;
     &:hover{
@@ -68,6 +68,9 @@
     @include rem(24);
 }
     .cafe-footer{
+        clear: both;
+    }
+    .purin-footer{
         clear: both;
     }
 }

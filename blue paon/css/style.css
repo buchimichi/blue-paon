@@ -120,7 +120,7 @@ img {
 
 .dolce-logo {
   display: block;
-  background: url(../../img/dolce_logo.png) no-repeat center center;
+  background: url(../img/dolce_logo.png) no-repeat center center;
   height: 48px;
   margin: 48px 0; }
   .dolce-logo:hover {
@@ -173,6 +173,8 @@ img {
     font-size: 24px;
     font-size: 2.4rem; }
   .cafe-footer {
+    clear: both; }
+  .purin-footer {
     clear: both; } }
 
 .header-nav {
@@ -382,6 +384,30 @@ img {
   margin-top: 10px;
   font-family: "Carrois Gothic", sans-serif; }
 
+.purininfo-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #000;
+  text-align: center;
+  padding: 16px 0 24px 0;
+  margin-bottom: 40px; }
+
+.hokkidodolce-title {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  padding: 16px 0 24px 0;
+  margin-bottom: 40px; }
+
+.yuukipurin-title {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  padding: 16px 0 24px 0;
+  margin-bottom: 40px; }
+
 @media screen and (min-width: 960px) {
   .top-title {
     font-size: 30px;
@@ -406,7 +432,10 @@ img {
     font-size: 30px;
     font-size: 3rem; }
   .dolce-purintitle {
-    clear: both; } }
+    clear: both; }
+  .yuukipurin-title {
+    width: 100%;
+    padding-right: 0; } }
 
 .page-top {
   position: fixed;
@@ -423,6 +452,216 @@ img {
     width: 115px;
     height: 112px; } }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-list:focus {
+  outline: none; }
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-track:after {
+  clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-slide img {
+  display: block; }
+
+.slick-slide.slick-loading img {
+  display: none; }
+
+.slick-slide.dragging img {
+  pointer-events: none; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent; }
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1; }
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto; }
+
+.slick-prev:before {
+  content: '←'; }
+
+[dir='rtl'] .slick-prev:before {
+  content: '→'; }
+
+.slick-next {
+  right: -25px; }
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px; }
+
+.slick-next:before {
+  content: '→'; }
+
+[dir='rtl'] .slick-next:before {
+  content: '←'; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center; }
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer; }
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none; }
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1; }
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black; }
+
 .logo {
   height: 130px;
   background: url(../img/header_logo.png) no-repeat center center; }
@@ -430,9 +669,10 @@ img {
 .mv {
   width: 100%;
   height: 130px;
-  background: url(../img/mv_slide1_pc.png) no-repeat center center;
   background-size: cover;
   margin-bottom: 40px; }
+  .mv-img {
+    width: 100%; }
 
 .top-txt {
   width: 90%;
@@ -448,16 +688,16 @@ img {
   background-size: cover; }
 
 .top-cafe {
-  background: url(../../img/cafe_bg.png) no-repeat center center;
+  background: url(../img/cafe_bg.png) no-repeat center center;
   background-size: cover; }
 
 .top-dolce {
-  background: url(../../img/dolce_bg.png) no-repeat center center;
+  background: url(../img/dolce_bg.png) no-repeat center center;
   background-size: cover; }
 
 .bickup {
   width: 100%;
-  background: url(../../img/bickup_bg2.png) no-repeat center center rgba(0, 0, 0, 0.5);
+  background: url(../img/bickup_bg2.png) no-repeat center center rgba(0, 0, 0, 0.5);
   background-size: cover; }
   .bickup-list {
     margin-bottom: 24px; }
@@ -485,7 +725,7 @@ img {
 .top-accessmap {
   display: block;
   height: 110px;
-  background: url(../../img/access_bg.png) no-repeat center center;
+  background: url(../img/access_bg.png) no-repeat center center;
   background-size: cover;
   font-size: 24px;
   font-size: 2.4rem;
@@ -500,14 +740,19 @@ img {
     background-color: rgba(50, 50, 50, 0.5); }
 
 @media screen and (min-width: 768px) {
+  .mv {
+    height: 100%; }
+    .mv-img {
+      height: 226px;
+      margin-bottom: 20px; }
   .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background: url(../img/top_about_pc.png) no-repeat center center;
     background-size: cover; }
   .top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background: url(../img/top_cafe_pc.png) no-repeat center center;
     background-size: cover; }
   .top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background: url(../img/top_dolce_pc.png) no-repeat center center;
     background-size: cover; } }
 
 @media screen and (min-width: 960px) {
@@ -516,7 +761,10 @@ img {
     padding-top: 10px;
     margin-right: 230px; }
   .mv {
-    height: 400px; }
+    height: 100%; }
+    .mv-img {
+      height: 100%;
+      margin-bottom: 20px; }
   .top-txt {
     width: 60%;
     float: right;
@@ -552,7 +800,7 @@ img {
 .about-mv {
   width: 100%;
   height: 130px;
-  background: url(../../img/about-mvbg.png) no-repeat 30% center;
+  background: url(../img/about-mvbg.png) no-repeat 30% center;
   background-size: cover;
   margin-bottom: 40px;
   font-size: 24px;
@@ -575,7 +823,7 @@ img {
 .kikusui-img {
   width: 80%;
   height: 200px;
-  background: url(../../img/kikusui.png) no-repeat center center;
+  background: url(../img/kikusui.png) no-repeat center center;
   margin: 0 auto; }
 
 .kikusui-maintxt {
@@ -598,7 +846,7 @@ img {
 .maruyama-img {
   width: 80%;
   height: 200px;
-  background: url(../../img/maruyama.png) no-repeat center center;
+  background: url(../img/maruyama.png) no-repeat center center;
   margin: 0 auto; }
 
 @media screen and (min-width: 960px) {
@@ -630,7 +878,7 @@ img {
 .cafe-mv {
   width: 100%;
   height: 130px;
-  background: url(../../img/top_cafe_pc.png) no-repeat 30% center;
+  background: url(../img/top_cafe_pc.png) no-repeat 30% center;
   background-size: cover;
   margin-bottom: 40px;
   font-size: 24px;
@@ -721,7 +969,7 @@ img {
 .dolce-mv {
   width: 100%;
   height: 130px;
-  background: url(../../img/dolce_bg.png) no-repeat 30% center;
+  background: url(../img/dolce_bg.png) no-repeat 30% center;
   background-size: cover;
   margin-bottom: 40px;
   font-size: 24px;
@@ -744,7 +992,7 @@ img {
 .c-cake-img {
   width: 80%;
   height: 200px;
-  background: url(../../img/c_cake.png) no-repeat center center;
+  background: url(../img/c_cake.png) no-repeat center center;
   margin: 0 auto;
   margin-bottom: 40px; }
 
@@ -774,7 +1022,7 @@ img {
 .dolcepage-purin-img {
   width: 80%;
   height: 200px;
-  background: url(../../img/dolcepagepurin.png) no-repeat center center;
+  background: url(../img/dolcepagepurin.png) no-repeat center center;
   margin: 0 auto;
   margin-bottom: 40px; }
 
@@ -792,11 +1040,11 @@ img {
   .c-cake-img {
     width: 100%;
     height: 346px;
-    background: url(../../img/c_cake.png) no-repeat center center; }
+    background: url(../img/c_cake.png) no-repeat center center; }
   .dolcepage-purin-img {
     width: 100%;
     height: 346px;
-    background: url(../../img/dolcepagepurin.png) no-repeat center center; }
+    background: url(../img/dolcepagepurin.png) no-repeat center center; }
   .dolce-menu-left {
     width: 386px;
     margin-bottom: 30px;
@@ -808,7 +1056,7 @@ img {
 .contact-mv {
   width: 100%;
   height: 130px;
-  background: url(../../img/contact_pc.png) no-repeat 30% center;
+  background: url(../img/contact_pc.png) no-repeat 30% center;
   background-size: cover;
   margin-bottom: 40px;
   font-size: 24px;
@@ -860,506 +1108,548 @@ img {
   .contactform {
     width: 640px; } }
 
-.logo {
-  height: 130px;
-  background: url(../img/header_logo.png) no-repeat center center; }
-
-.mv {
+.purin-mv {
   width: 100%;
   height: 130px;
-  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background: url(../img/purin_title_bg.png) no-repeat 30% center;
   background-size: cover;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px; }
+
+.hokkidodolce-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/hokkidodolce.png) no-repeat center center;
+  margin: 0 auto;
   margin-bottom: 40px; }
 
-.top-txt {
+.yuukipurin-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/yuukipurin.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.purin-txt {
   width: 90%;
   display: inline-block;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
-  text-align: left;
-  padding: 0 7px; }
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000; }
+  .purin-txt span {
+    float: right; }
 
-.top-about {
-  background: url(../img/about_bg.png) no-repeat center center;
-  background-size: cover; }
+.purin-yen {
+  width: 90%;
+  text-align: right; }
 
-.top-cafe {
-  background: url(../../img/cafe_bg.png) no-repeat center center;
-  background-size: cover; }
+@media screen and (min-width: 960px) {
+  .purin-mv {
+    height: 400px;
+    padding-top: 100px; }
+  .purininfo-left {
+    width: 380px;
+    margin-right: 180px;
+    float: left; }
+  .purininfo-right {
+    width: 380px;
+    float: right; }
+  .hokkidodolce-img {
+    width: 380px;
+    height: 300px; }
+  .yuukipurin-img {
+    width: 380px;
+    height: 300px; }
+  .purin-txt {
+    width: 100%;
+    padding-left: 0; }
+  .purin-yen {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 80px; } }
 
-.top-dolce {
-  background: url(../../img/dolce_bg.png) no-repeat center center;
-  background-size: cover; }
-
-.bickup {
+.cake-mv {
   width: 100%;
-  background: url(../../img/bickup_bg2.png) no-repeat center center;
-  background-size: cover; }
-  .bickup-list {
-    margin-bottom: 24px; }
-  .bickup-item {
-    list-style-type: none;
-    width: 55%;
-    height: 260px;
-    margin: 0 auto; }
-  .bickup-link {
-    display: inline-block;
-    font-size: 18px;
-    font-size: 1.8rem;
-    padding: 10px 0;
-    line-height: 1.5;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 36px; }
-    .bickup-link:hover {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 10px; }
-  .bickup-img {
-    margin-bottom: 24px; }
-
-.top-accessmap {
-  display: block;
-  height: 110px;
-  background: url(../../img/access_bg.png) no-repeat center center;
+  height: 130px;
+  background: url(../img/crismas_bg.png) no-repeat 30% center;
   background-size: cover;
+  margin-bottom: 40px;
   font-size: 24px;
   font-size: 2.4rem;
   color: #fff;
-  text-decoration: none; }
+  text-align: center;
+  padding-top: 40px; }
 
-.top-accesstxt {
-  padding-top: 45px;
-  padding-bottom: 40px;
-  text-align: center; }
-  .top-accesstxt:hover {
-    background-color: rgba(50, 50, 50, 0.5); }
+.tizecake04-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/tizecake04.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
 
-@media screen and (min-width: 768px) {
-  .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover; } }
+.tizecake06-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/tizecake06.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.gatoshokora-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/gatoshokora.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.sifhoncake-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/sifhoncake.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.purin-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 40px; }
+
+.cake-maintxt {
+  margin-bottom: 60px; }
+
+.tizecake-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
+
+.gatosifon-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
+
+.purin-yen {
+  width: 90%;
+  text-align: right; }
+
+.cake-yen {
+  margin-bottom: 45px; }
+
+.gatosifon-yen {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  width: 90%;
+  text-align: right;
+  margin-bottom: 45px; }
 
 @media screen and (min-width: 960px) {
-  .logo {
-    width: 145px;
-    padding-top: 10px;
-    margin-right: 230px; }
-  .mv {
-    height: 400px; }
-  .top-txt {
-    width: 60%;
-    float: right;
-    padding-top: 80px; }
-  .bickup {
-    height: 100%; }
-    .bickup-list {
-      margin-bottom: 24px;
+  .cake-mv {
+    height: 400px;
+    padding-top: 100px; }
+  .cake-menuarea {
+    width: 100%; }
+    .cake-menuarea ul {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-    .bickup-item {
-      width: 100%;
-      margin-right: 24px;
-      margin-bottom: 40px; }
-    .bickup-link {
-      font-size: 24px;
-      font-size: 2.4rem; }
-    .bickup-img {
-      margin-bottom: 24px; }
-  .top-accessmap {
-    height: 317px; }
-  .top-accesstxt {
-    padding-top: 150px;
-    padding-bottom: 140px; }
-    .top-accesstxt:hover {
-      background-color: rgba(50, 50, 50, 0.5); } }
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .cake-menuarea ul li {
+        list-style-type: none;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%; }
+  .tizecake04-img,
+  .tizecake06-img,
+  .gatoshokora-img,
+  .sifhoncake-img {
+    width: 380px;
+    height: 300px;
+    margin-bottom: 40px; }
+  .purin-txt {
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 0;
+    margin-bottom: 40px; }
+  .cake-maintxt {
+    margin-bottom: 60px; }
+  .tizecake-txt {
+    width: 73%;
+    margin-left: 150px; }
+  .gatosifon-txt {
+    width: 100%;
+    padding: 0 10px; }
+  .purin-yen {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 80px; }
+  .gatosifon-yen {
+    width: 100%; } }
 
-.logo {
-  height: 130px;
-  background: url(../img/header_logo.png) no-repeat center center; }
-
-.mv {
+.lanch-mv {
   width: 100%;
   height: 130px;
-  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background: url(../img/lanch_bg.png) no-repeat 30% center;
   background-size: cover;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px; }
+
+.potohu-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/potohu.png) no-repeat center center;
+  margin: 0 auto;
   margin-bottom: 40px; }
 
-.top-txt {
+.sityu-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/sityu.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.montiku-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/montiku.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.purin-txt {
   width: 90%;
   display: inline-block;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
-  text-align: left;
-  padding: 0 7px; }
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000; }
 
-.top-about {
-  background: url(../img/about_bg.png) no-repeat center center;
-  background-size: cover; }
+.cake-maintxt {
+  margin-bottom: 60px; }
 
-.top-cafe {
-  background: url(../../img/cafe_bg.png) no-repeat center center;
-  background-size: cover; }
+.lanch-maintxt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
 
-.top-dolce {
-  background: url(../../img/dolce_bg.png) no-repeat center center;
-  background-size: cover; }
+.tizecake-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
 
-.bickup {
-  width: 100%;
-  background: url(../../img/bickup_bg2.png) no-repeat center center;
-  background-size: cover; }
-  .bickup-list {
-    margin-bottom: 24px; }
-  .bickup-item {
-    list-style-type: none;
-    width: 55%;
-    height: 260px;
-    margin: 0 auto; }
-  .bickup-link {
-    display: inline-block;
-    font-size: 18px;
-    font-size: 1.8rem;
-    padding: 10px 0;
-    line-height: 1.5;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 36px; }
-    .bickup-link:hover {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 10px; }
-  .bickup-img {
-    margin-bottom: 24px; }
+.gatosifon-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
 
-.top-accessmap {
-  display: block;
-  height: 110px;
-  background: url(../../img/access_bg.png) no-repeat center center;
-  background-size: cover;
-  font-size: 24px;
-  font-size: 2.4rem;
-  color: #fff;
-  text-decoration: none; }
+.purin-yen {
+  width: 90%;
+  text-align: right; }
 
-.top-accesstxt {
-  padding-top: 45px;
-  padding-bottom: 40px;
-  text-align: center; }
-  .top-accesstxt:hover {
-    background-color: rgba(50, 50, 50, 0.5); }
+.cake-yen {
+  margin-bottom: 45px; }
 
-@media screen and (min-width: 768px) {
-  .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover; } }
+.gatosifon-yen {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  width: 90%;
+  text-align: right;
+  margin-bottom: 45px; }
+
+.montiku-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000; }
+  .montiku-txt span {
+    float: right; }
 
 @media screen and (min-width: 960px) {
-  .logo {
-    width: 145px;
-    padding-top: 10px;
-    margin-right: 230px; }
-  .mv {
-    height: 400px; }
-  .top-txt {
-    width: 60%;
-    float: right;
-    padding-top: 80px; }
-  .bickup {
-    height: 100%; }
-    .bickup-list {
-      margin-bottom: 24px;
+  .lanch-mv {
+    height: 400px;
+    padding-top: 100px; }
+  .cake-menuarea {
+    width: 100%; }
+    .cake-menuarea ul {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-    .bickup-item {
-      width: 100%;
-      margin-right: 24px;
-      margin-bottom: 40px; }
-    .bickup-link {
-      font-size: 24px;
-      font-size: 2.4rem; }
-    .bickup-img {
-      margin-bottom: 24px; }
-  .top-accessmap {
-    height: 317px; }
-  .top-accesstxt {
-    padding-top: 150px;
-    padding-bottom: 140px; }
-    .top-accesstxt:hover {
-      background-color: rgba(50, 50, 50, 0.5); } }
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .cake-menuarea ul li {
+        list-style-type: none;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        margin-bottom: 40px; }
+  .potohu-img,
+  .sityu-img {
+    width: 380px;
+    height: 300px;
+    margin: 0; }
+  .montiku-img {
+    width: 480px;
+    height: 360px;
+    margin: 0 auto; }
+  .montiku-txt {
+    display: inline-block;
+    width: 55%;
+    margin-left: 190px; }
+  .purin-txt {
+    width: 100%;
+    padding-left: 0; }
+  .cake-maintxt {
+    margin-bottom: 60px; }
+  .lanch-maintxt {
+    width: 100%;
+    text-align: center; }
+  .tizecake-txt {
+    width: 73%;
+    margin-left: 150px; }
+  .lanch-subtxt {
+    width: 80%;
+    margin-left: 100px; }
+  .gatosifon-txt {
+    width: 100%;
+    padding: 0 10px; }
+  .egg-txt {
+    padding-top: 0;
+    margin-bottom: 0; }
+  .purin-yen {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 80px; }
+  .gatosifon-yen {
+    width: 100%; } }
 
-.logo {
-  height: 130px;
-  background: url(../img/header_logo.png) no-repeat center center; }
-
-.mv {
+.newbickup-mv {
   width: 100%;
   height: 130px;
-  background: url(../img/mv_slide1_pc.png) no-repeat center center;
+  background: url(../img/newbickup_bg.png) no-repeat 30% center;
   background-size: cover;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px; }
+
+.younasi_holl-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/younasi_holl.png) no-repeat center center;
+  margin: 0 auto;
   margin-bottom: 40px; }
 
-.top-txt {
+.younasi_stick-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/younasi_stick.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.gorgon-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/gorgon.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.banana-img {
+  width: 80%;
+  height: 200px;
+  background: url(../img/banana.png) no-repeat center center;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.purin-txt {
   width: 90%;
   display: inline-block;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
-  text-align: left;
-  padding: 0 7px; }
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 40px; }
 
-.top-about {
-  background: url(../img/about_bg.png) no-repeat center center;
-  background-size: cover; }
+.cake-maintxt {
+  margin-bottom: 60px; }
 
-.top-cafe {
-  background: url(../../img/cafe_bg.png) no-repeat center center;
-  background-size: cover; }
+.tizecake-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
 
-.top-dolce {
-  background: url(../../img/dolce_bg.png) no-repeat center center;
-  background-size: cover; }
+.gatosifon-txt {
+  width: 90%;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  margin-bottom: 60px; }
 
-.bickup {
-  width: 100%;
-  background: url(../../img/bickup_bg2.png) no-repeat center center;
-  background-size: cover; }
-  .bickup-list {
-    margin-bottom: 24px; }
-  .bickup-item {
-    list-style-type: none;
-    width: 55%;
-    height: 260px;
-    margin: 0 auto; }
-  .bickup-link {
-    display: inline-block;
-    font-size: 18px;
-    font-size: 1.8rem;
-    padding: 10px 0;
-    line-height: 1.5;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 36px; }
-    .bickup-link:hover {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 10px; }
-  .bickup-img {
-    margin-bottom: 24px; }
+.purin-yen {
+  width: 90%;
+  text-align: right; }
 
-.top-accessmap {
-  display: block;
-  height: 110px;
-  background: url(../../img/access_bg.png) no-repeat center center;
-  background-size: cover;
-  font-size: 24px;
-  font-size: 2.4rem;
-  color: #fff;
-  text-decoration: none; }
+.cake-yen {
+  margin-bottom: 45px; }
 
-.top-accesstxt {
-  padding-top: 45px;
-  padding-bottom: 40px;
-  text-align: center; }
-  .top-accesstxt:hover {
-    background-color: rgba(50, 50, 50, 0.5); }
-
-@media screen and (min-width: 768px) {
-  .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover; } }
+.gatosifon-yen {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-left: 40px;
+  font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+  color: #000;
+  width: 90%;
+  text-align: right;
+  margin-bottom: 45px; }
 
 @media screen and (min-width: 960px) {
-  .logo {
-    width: 145px;
-    padding-top: 10px;
-    margin-right: 230px; }
-  .mv {
-    height: 400px; }
-  .top-txt {
-    width: 60%;
-    float: right;
-    padding-top: 80px; }
-  .bickup {
-    height: 100%; }
-    .bickup-list {
-      margin-bottom: 24px;
+  .newbickup-mv {
+    height: 400px;
+    padding-top: 100px; }
+  .cake-menuarea {
+    width: 100%; }
+    .cake-menuarea ul {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-    .bickup-item {
-      width: 100%;
-      margin-right: 24px;
-      margin-bottom: 40px; }
-    .bickup-link {
-      font-size: 24px;
-      font-size: 2.4rem; }
-    .bickup-img {
-      margin-bottom: 24px; }
-  .top-accessmap {
-    height: 317px; }
-  .top-accesstxt {
-    padding-top: 150px;
-    padding-bottom: 140px; }
-    .top-accesstxt:hover {
-      background-color: rgba(50, 50, 50, 0.5); } }
-
-.logo {
-  height: 130px;
-  background: url(../img/header_logo.png) no-repeat center center; }
-
-.mv {
-  width: 100%;
-  height: 130px;
-  background: url(../img/mv_slide1_pc.png) no-repeat center center;
-  background-size: cover;
-  margin-bottom: 40px; }
-
-.top-txt {
-  width: 90%;
-  display: inline-block;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 1.5;
-  text-align: left;
-  padding: 0 7px; }
-
-.top-about {
-  background: url(../img/about_bg.png) no-repeat center center;
-  background-size: cover; }
-
-.top-cafe {
-  background: url(../../img/cafe_bg.png) no-repeat center center;
-  background-size: cover; }
-
-.top-dolce {
-  background: url(../../img/dolce_bg.png) no-repeat center center;
-  background-size: cover; }
-
-.bickup {
-  width: 100%;
-  background: url(../../img/bickup_bg2.png) no-repeat center center;
-  background-size: cover; }
-  .bickup-list {
-    margin-bottom: 24px; }
-  .bickup-item {
-    list-style-type: none;
-    width: 55%;
-    height: 260px;
-    margin: 0 auto; }
-  .bickup-link {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .cake-menuarea ul li {
+        list-style-type: none;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%; }
+  .younasi_holl-img,
+  .younasi_stick-img,
+  .gorgon-img,
+  .banana-img {
+    width: 380px;
+    height: 300px;
+    margin-bottom: 40px; }
+  .purin-txt {
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 0;
+    margin-bottom: 40px; }
+  .cake-maintxt {
+    margin-bottom: 60px; }
+  .lanch-maintxt {
+    width: 90%;
     display: inline-block;
     font-size: 18px;
     font-size: 1.8rem;
-    padding: 10px 0;
     line-height: 1.5;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 36px; }
-    .bickup-link:hover {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 10px; }
-  .bickup-img {
-    margin-bottom: 24px; }
-
-.top-accessmap {
-  display: block;
-  height: 110px;
-  background: url(../../img/access_bg.png) no-repeat center center;
-  background-size: cover;
-  font-size: 24px;
-  font-size: 2.4rem;
-  color: #fff;
-  text-decoration: none; }
-
-.top-accesstxt {
-  padding-top: 45px;
-  padding-bottom: 40px;
-  text-align: center; }
-  .top-accesstxt:hover {
-    background-color: rgba(50, 50, 50, 0.5); }
-
-@media screen and (min-width: 768px) {
-  .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover; }
-  .top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover; } }
-
-@media screen and (min-width: 960px) {
-  .logo {
-    width: 145px;
-    padding-top: 10px;
-    margin-right: 230px; }
-  .mv {
-    height: 400px; }
-  .top-txt {
-    width: 60%;
-    float: right;
-    padding-top: 80px; }
-  .bickup {
-    height: 100%; }
-    .bickup-list {
-      margin-bottom: 24px;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .bickup-item {
-      width: 100%;
-      margin-right: 24px;
-      margin-bottom: 40px; }
-    .bickup-link {
-      font-size: 24px;
-      font-size: 2.4rem; }
-    .bickup-img {
-      margin-bottom: 24px; }
-  .top-accessmap {
-    height: 317px; }
-  .top-accesstxt {
-    padding-top: 150px;
-    padding-bottom: 140px; }
-    .top-accesstxt:hover {
-      background-color: rgba(50, 50, 50, 0.5); } }
+    padding-left: 40px;
+    font-family: "Sawarabi Gothic", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", verdana, Sans-Serif;
+    color: #000;
+    margin-bottom: 60px; }
+  .newbickup-txt {
+    width: 98%; }
+  .tizecake-txt {
+    width: 73%;
+    margin-left: 150px; }
+  .gatosifon-txt {
+    width: 100%;
+    padding: 0 10px; }
+  .purin-yen {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 80px; }
+  .gatosifon-yen {
+    width: 100%; } }

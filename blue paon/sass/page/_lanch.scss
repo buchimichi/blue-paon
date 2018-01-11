@@ -1,157 +1,193 @@
-.logo{
-        height: 130px;
-        background: url(../img/header_logo.png) no-repeat center center;
-    }
-
-.mv {
+.lanch-mv {
     width: 100%;
     height: 130px;
-    background: url(../img/mv_slide1_pc.png) no-repeat center center;
+    background: url(../img/lanch_bg.png) no-repeat 30% center;
     background-size: cover;
+    margin-bottom: 40px;
+    @include rem(24);
+    color: $color-txt;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.potohu-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/potohu.png) no-repeat center center;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 
-.top-txt {
+.sityu-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/sityu.png) no-repeat center center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.montiku-img {
+    width: 80%;
+    height: 200px;
+    background: url(../img/montiku.png) no-repeat center center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.purin-txt {
     width: 90%;
     display: inline-block;
-    @include rem(18) 
+    @include rem(18);
     line-height: $lh-txt;
-    text-align: left;
-    padding: 0 7px;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
 }
 
-.top-about {
-    background: url(../img/about_bg.png) no-repeat center center;
-    background-size: cover;
+.cake-maintxt {
+    margin-bottom: 60px;
+}
+.lanch-maintxt{
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 60px;
+}
+.tizecake-txt {
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 60px;
 }
 
-.top-cafe {
-    background: url(../../img/cafe_bg.png) no-repeat center center;
-    background-size: cover;
+.gatosifon-txt {
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    margin-bottom: 60px;
+}
+.purin-yen {
+    width: 90%;
+    text-align: right;
 }
 
-.top-dolce {
-    background: url(../../img/dolce_bg.png) no-repeat center center;
-    background-size: cover;
+.cake-yen {
+    margin-bottom: 45px;
 }
 
-.bickup {
-    width: 100%;
-    background: url(../../img/bickup_bg2.png) no-repeat center center;
-    background-size: cover;
-    &-list {
-        margin-bottom: 24px;
-    }
-    &-item {
-        list-style-type: none;
-        width: 55%;
-        height: 260px;
-        margin: 0 auto;
-    }
-    &-link {
-        display: inline-block;
-        @include rem(18);
-        padding: 10px 0;
-        line-height: $lh-txt;
-        text-decoration: none;
-        color: $color-txt;
-        text-align: center;
-        margin-bottom: 36px;
-        &:hover{
-            background-color:rgba(255,255,255,.5);
-            border-radius: 10px;
-        }
-    }
-    &-img {
-        margin-bottom: 24px;
-    }
-    
+.gatosifon-yen{
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    width: 90%;
+    text-align: right;
+    margin-bottom: 45px;
 }
 
-.top-accessmap{
-    display: block;
-    height: 110px;
-    background: url(../../img/access_bg.png) no-repeat center center;
-    background-size: cover;
-    @include rem(24);
-    color:$color-txt;
-    text-decoration: none;
-}
-
-.top-accesstxt{
-    padding-top: 45px;
-    padding-bottom: 40px;
-    text-align: center;
-    &:hover{
-            background-color:rgba(50,50,50,.5);
-        }
-}
-//--------------------768px以上-----------------------------
-@media screen and(min-width:$sp){
-    .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
-    background-size: cover;
-}
-
-.top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover;
-}
-
-.top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover;
-}
-}
-//------------------------960px以上-------------------------
-@media screen and (min-width:$pc){
-    .logo{
-        width: 145px;
-        padding-top: 10px;
-        margin-right: 230px;
-    }
-    .mv {
-    height: 400px;
-}
-    .top-txt {
-        width: 60%;
+.montiku-txt{
+    width: 90%;
+    display: inline-block;
+    @include rem(18);
+    line-height: $lh-txt;
+    padding-left: 40px;
+    font-family: $font-jp;
+    color: #000;
+    span{
         float: right;
-        padding-top: 80px;
+    }
 }
-
-.bickup {
-   height: 100%;
-    &-list {
-        margin-bottom: 24px;
-        display: -webkit-flex;
+@media screen and(min-width:$pc) {
+    .lanch-mv {
+        height: 400px;
+        padding-top: 100px;
+    }
+    .cake-menuarea{
+        width: 100%;
+        ul{
+            display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
-        display: flex; 
-    }
-    &-item {
-        width: 100%;
-        margin-right: 24px;
-        margin-bottom: 40px;
-    }
-    &-link {
-        @include rem(24);
-    }
-    &-img {
-        margin-bottom: 24px;
-    }
-}
-    .top-accessmap{
-    height: 317px;
-}
-    .top-accesstxt{
-    padding-top: 150px;
-        padding-bottom: 140px;
-        &:hover{
-            background-color:rgba(50,50,50,.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+            
+        li{ 
+            list-style-type: none;
+            flex: 0 0 40%;
+            margin-bottom: 40px;
         }
+        }
+    }
+    .potohu-img,
+    .sityu-img{
+        width: 380px;
+        height: 300px;
+        margin: 0;
+    }
+    .montiku-img{
+        width: 480px;
+        height: 360px;
+        margin: 0 auto;
+    }
+    .montiku-txt{
+        display: inline-block;
+        width: 55%;
+        margin-left: 190px;
+    }
+    .purin-txt {
+        width: 100%;
+        padding-left: 0;
+    }
+    .cake-maintxt {  
+    margin-bottom: 60px;
+}
+    .lanch-maintxt{
+         width: 100%;
+        text-align: center;
+    }
+   
+    .tizecake-txt {
+    width: 73%;
+        margin-left: 150px;
+}
+     .lanch-subtxt{
+        width: 80%;
+         margin-left: 100px;
+    }
+    .gatosifon-txt {
+    width: 100%;
+    padding: 0 10px;
+}
+    .egg-txt{
+        padding-top: 0;
+       margin-bottom: 0;
+    }
+    
+        
+    .purin-yen {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 80px;
+    }
+    .gatosifon-yen{
+   
+    width: 100%;
+   
 }
 }
-
-
-

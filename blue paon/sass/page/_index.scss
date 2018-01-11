@@ -6,9 +6,12 @@
 .mv {
     width: 100%;
     height: 130px;
-    background: url(../img/mv_slide1_pc.png) no-repeat center center;
     background-size: cover;
     margin-bottom: 40px;
+    &-img{
+        width: 100%;
+//        background-size: cover;
+    }
 }
 
 .top-txt {
@@ -26,18 +29,18 @@
 }
 
 .top-cafe {
-    background: url(../../img/cafe_bg.png) no-repeat center center;
+    background: url(../img/cafe_bg.png) no-repeat center center;
     background-size: cover;
 }
 
 .top-dolce {
-    background: url(../../img/dolce_bg.png) no-repeat center center;
+    background: url(../img/dolce_bg.png) no-repeat center center;
     background-size: cover;
 }
 
 .bickup {
     width: 100%;
-    background: url(../../img/bickup_bg2.png) no-repeat center center rgba(0,0,0,0.5);
+    background: url(../img/bickup_bg2.png) no-repeat center center rgba(0,0,0,0.5);
     background-size: cover;
     &-list {
         margin-bottom: 24px;
@@ -71,7 +74,7 @@
 .top-accessmap{
     display: block;
     height: 110px;
-    background: url(../../img/access_bg.png) no-repeat center center;
+    background: url(../img/access_bg.png) no-repeat center center;
     background-size: cover;
     @include rem(24);
     color:$color-txt;
@@ -88,18 +91,26 @@
 }
 //--------------------768px以上-----------------------------
 @media screen and(min-width:$sp){
+    .mv {
+    height: 100%;
+        
+        &-img{
+            height: 226px;
+            margin-bottom:20px;
+        }
+    }
     .top-about {
-    background: url(../../img/top_about_pc.png) no-repeat center center;
+    background: url(../img/top_about_pc.png) no-repeat center center;
     background-size: cover;
 }
 
 .top-cafe {
-    background: url(../../img/top_cafe_pc.png) no-repeat center center;
+    background: url(../img/top_cafe_pc.png) no-repeat center center;
     background-size: cover;
 }
 
 .top-dolce {
-    background: url(../../img/top_dolce_pc.png) no-repeat center center;
+    background: url(../img/top_dolce_pc.png) no-repeat center center;
     background-size: cover;
 }
 }
@@ -111,7 +122,12 @@
         margin-right: 230px;
     }
     .mv {
-    height: 400px;
+    height: 100%;
+        
+        &-img{
+            height: 100%;
+            margin-bottom:20px;
+        }
 }
     .top-txt {
         width: 60%;
