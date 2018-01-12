@@ -1,23 +1,25 @@
-.logo{
-        height: 130px;
-        background: url(../img/header_logo.png) no-repeat center center;
-    }
+
+.logo {
+    text-align: center;
+}
 
 .mv {
     width: 100%;
     height: 130px;
     background-size: cover;
     margin-bottom: 40px;
-    &-img{
+//    padding: 0 10px;
+//    box-sizing: border-box;
+    &-img {
         width: 100%;
-//        background-size: cover;
+        //        background-size: cover;
     }
 }
 
 .top-txt {
     width: 90%;
     display: inline-block;
-    @include rem(18) 
+    @include rem(18); 
     line-height: $lh-txt;
     text-align: left;
     padding: 0 7px;
@@ -40,7 +42,7 @@
 
 .bickup {
     width: 100%;
-    background: url(../img/bickup_bg2.png) no-repeat center center rgba(0,0,0,0.5);
+    background: url(../img/bickup_bg2.png) no-repeat center center rgba(0, 0, 0, 0.5);
     background-size: cover;
     &-list {
         margin-bottom: 24px;
@@ -60,114 +62,104 @@
         color: $color-txt;
         text-align: center;
         margin-bottom: 36px;
-        &:hover{
-            background-color:rgba(255,255,255,.5);
+        &:hover {
+            background-color: rgba(255, 255, 255, .5);
             border-radius: 10px;
         }
     }
     &-img {
         margin-bottom: 24px;
     }
-    
 }
 
-.top-accessmap{
+.top-accessmap {
     display: block;
     height: 110px;
     background: url(../img/access_bg.png) no-repeat center center;
     background-size: cover;
     @include rem(24);
-    color:$color-txt;
+    color: $color-txt;
     text-decoration: none;
 }
 
-.top-accesstxt{
+.top-accesstxt {
     padding-top: 45px;
     padding-bottom: 40px;
     text-align: center;
-    &:hover{
-            background-color:rgba(50,50,50,.5);
-        }
+    &:hover {
+        background-color: rgba(50, 50, 50, .5);
+    }
 }
+
 //--------------------768px以上-----------------------------
-@media screen and(min-width:$sp){
+@media screen and(min-width:$sp) {
     .mv {
-    height: 100%;
-        
-        &-img{
+        height: 100%;
+        &-img {
             height: 226px;
-            margin-bottom:20px;
+            margin-bottom: 20px;
         }
     }
     .top-about {
-    background: url(../img/top_about_pc.png) no-repeat center center;
-    background-size: cover;
+        background: url(../img/top_about_pc.png) no-repeat center center;
+        background-size: cover;
+    }
+    .top-cafe {
+        background: url(../img/top_cafe_pc.png) no-repeat center center;
+        background-size: cover;
+    }
+    .top-dolce {
+        background: url(../img/top_dolce_pc.png) no-repeat center center;
+        background-size: cover;
+    }
 }
 
-.top-cafe {
-    background: url(../img/top_cafe_pc.png) no-repeat center center;
-    background-size: cover;
-}
-
-.top-dolce {
-    background: url(../img/top_dolce_pc.png) no-repeat center center;
-    background-size: cover;
-}
-}
 //------------------------960px以上-------------------------
-@media screen and (min-width:$pc){
-    .logo{
+@media screen and (min-width:$pc) {
+    .logo {
         width: 145px;
         padding-top: 10px;
         margin-right: 230px;
     }
     .mv {
-    height: 100%;
-        
-        &-img{
+        height: 100%;
+        &-img {
             height: 100%;
-            margin-bottom:20px;
+            margin-bottom: 20px;
         }
-}
+    }
     .top-txt {
         width: 60%;
         float: right;
         padding-top: 80px;
-}
-
-.bickup {
-   height: 100%;
-    &-list {
-        margin-bottom: 24px;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex; 
     }
-    &-item {
-        width: 100%;
-        margin-right: 24px;
-        margin-bottom: 40px;
-    }
-    &-link {
-        @include rem(24);
-    }
-    &-img {
-        margin-bottom: 24px;
-    }
-}
-    .top-accessmap{
-    height: 317px;
-}
-    .top-accesstxt{
-    padding-top: 150px;
-        padding-bottom: 140px;
-        &:hover{
-            background-color:rgba(50,50,50,.5);
+    .bickup {
+        height: 100%;
+        &-list {
+            margin-bottom: 24px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
         }
+        &-item {
+            width: 100%;
+            margin-right: 24px;
+            margin-bottom: 40px;
+        }
+        &-img {
+            margin-bottom: 24px;
+        }
+    }
+    .top-accessmap {
+        height: 317px;
+    }
+    .top-accesstxt {
+        padding-top: 150px;
+        padding-bottom: 140px;
+        &:hover {
+            background-color: rgba(50, 50, 50, .5);
+        }
+    }
 }
-}
-
-
-
